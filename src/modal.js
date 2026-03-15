@@ -6,6 +6,10 @@ const modal = document.querySelector("#modal");
 // remove class invisible from div modal
 button.addEventListener("click", () => {
 	modal.classList.remove("invisible");
+
+	setTimeout(() => {
+		modal.classList.add("invisible");
+	}, 5000);
 });
 
 // add event listener on key press Escape
